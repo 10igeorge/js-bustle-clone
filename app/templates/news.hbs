@@ -1,0 +1,7 @@
+<ul>
+  {{#each model as |article|}}
+    {{#if (filterArticles article 'news')}}
+      {{article-list article=article}}
+    {{/if}}
+  {{/each}}
+</ul>
