@@ -13,6 +13,9 @@ Router.map(function() {
   this.route('fashion-beauty');
   this.route('lifestyle');
   this.route('books');
+  this.route('about');
+  this.route('apps');
+  this.route('contact');
 });
 
 export default Router;

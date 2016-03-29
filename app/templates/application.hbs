@@ -27,13 +27,9 @@
         {{#bs-dropdown tagName="li"}}
           {{#bs-dropdown-toggle}}About <span class="caret"></span>{{/bs-dropdown-toggle}}
           {{#bs-dropdown-menu}}
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Advertise with us</a></li>
-            <li><a href="#">Apps</a></li>
-            <li><a href="#">Terms</a></li>
-            <li><a href="#">Privacy</a></li>
-            <li><a href="#">DMCA</a></li>
-            <li><a href="#">Contact</a></li>
+            <li>{{#link-to 'about'}}About us{{/link-to}}</li>
+            <li>{{#link-to 'apps'}}Apps{{/link-to}}</li>
+            <li>{{#link-to 'contact'}}Contact{{/link-to}}</li>
           {{/bs-dropdown-menu}}
         {{/bs-dropdown}}
       </ul>

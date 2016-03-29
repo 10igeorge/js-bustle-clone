@@ -1,2 +1,14 @@
-{{log article.category}}
-<li>{{#link-to 'article' article.id}}<li>{{article.title}}</li>{{/link-to}}</li>
+{{#link-to 'article' article.id}}
+<div class="col-md-6">
+  <div class="article">
+
+      <img src={{article.image}}>
+      {{article.title}}<br>
+      <span class="authorList">By {{article.author}}</span>
+      <div class="overlayText">
+        {{article.category}}
+      </div>
+  </div>
+</div>
+
+{{/link-to}}
