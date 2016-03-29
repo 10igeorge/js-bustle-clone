@@ -21,8 +21,11 @@ export default Ember.Route.extend({
       article.save();
       this.transitionTo('admin');
     },
-    update(){
-
+    delete(article){
+      if(confirm('Delete this article?')){
+        article.destroyRecord();
+        this.transitionTo('admin');
+      }
     }
   }
 });
