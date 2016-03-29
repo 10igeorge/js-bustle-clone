@@ -1,1 +1,7 @@
 <h1>Bustle Clone</h1>
+
+<ul>
+  {{#each model as |article|}}
+    <li>{{#link-to 'article' article.id}}{{article.title}}{{/link-to}}</li>
+  {{/each}}
+</ul>

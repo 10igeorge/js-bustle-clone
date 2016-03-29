@@ -1,0 +1,19 @@
+{
+  "articles": [{
+    "id": 1,
+    "title": "Oculus Rift Takes over World",
+    "author": "Me",
+    "date": "12-24-91",
+    "body": "So cool",
+    "category": "Tech",
+    "image": "https://s3.amazonaws.com/static.oculus.com/website/2016/01/riftblogpierre1.jpg"
+  }, {
+    "id": 2,
+    "title": "Testtest",
+    "author": "Me",
+    "date": "12-24-91",
+    "body": "TesttestTesttestTesttestTesttest",
+    "category": "TEST",
+    "image": "https://timedotcom.files.wordpress.com/2015/10/student-test.jpg?quality=75&strip=color&w=1100"
+  }]
+}
