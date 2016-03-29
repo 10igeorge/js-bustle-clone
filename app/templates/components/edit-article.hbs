@@ -7,8 +7,13 @@
         {{input value=title id="title" placeholder=article.title}}
       </div>
       <div class="form-group">
-        <label for="category">Category:</label>
-        {{input value=category id="category" placeholder=article.category}}
+        {{#x-select value=dropdown}}
+          {{#x-option value="news"}}News{{/x-option}}
+          {{#x-option value="entertainment"}}Entertainment{{/x-option}}
+          {{#x-option value="fashion"}}Fashion &amp; Beauty{{/x-option}}
+          {{#x-option value="lifestyle"}}Lifestyle{{/x-option}}
+          {{#x-option value="books"}}Books{{/x-option}}
+        {{/x-select}}
       </div>
       <div class="form-group">
         <label for="author">Author:</label>
