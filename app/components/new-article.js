@@ -4,12 +4,13 @@ export default Ember.Component.extend({
   showArticleForm: false,
     actions: {
       submitNewArticle(){
-        console.log(this.get('dropdown'));
+        var date = new Date();
+        date = date.toString().substring(0,15);
         var params = {
           title: this.get('title'),
           category: this.get('dropdown'),
           author: this.get('author'),
-          date: this.get('date'),
+          date: date,
           body: this.get('body'),
           image: this.get('image')
         };
