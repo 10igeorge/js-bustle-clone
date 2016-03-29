@@ -11,8 +11,15 @@ export default Ember.Route.extend({
       newArticle.save();
       this.transitionTo('admin');
     },
-    edit(){
-
+    edit(article, params){
+      console.log(article.title);
+      Object.keys(params).forEach(function(key) {
+        if(params[key]!==undefined) {
+          article.set(key, params[key]);
+        }
+      });
+      article.save();
+      this.transitionTo('admin');
     },
     update(){
 

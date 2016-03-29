@@ -11,10 +11,8 @@
 <ul>
   {{#each model as |article|}}
     <li>{{#link-to 'article' article.id}}{{article.title}}{{/link-to}}
-      <div class="btn-group">
-        <button class="btn btn-info btn-xs">Edit</button>
+        {{edit-article article=article edit="edit"}}
         <button class="btn btn-danger btn-xs">Delete</button>
-      </div>
     </li>
   {{/each}}
 </ul>

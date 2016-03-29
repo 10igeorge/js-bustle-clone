@@ -12,7 +12,7 @@
     "title": "Testtest",
     "author": "Me",
     "date": "12-24-91",
-    "body": "TesttestTesttestTesttestTesttest",
+    "body": "When the application pauses, select the console from the bottom pane of developer tools. We'll type directly into the console. This will display our current rental object. Using the triangle left of 'Class' will expand its details. Here we can see the get and set actions for each of the rental's properties. If we look at the params hash we can see the key-value pairs for each of our update form's fields. Fields that were updated include the value entered by the user. Fields that were not are listed as undefined. Our updated fields should be owner, type and bedrooms, as visible in the image above.Again, the keys inparams should match the names of the attributes onrental model. We want to update every attribute the user defined to the new value (ie: every value not undefined). In this example, we want the owner, type and bedrooms properties to be updated with the new values, but city and image should remain the same, since the user has opted not to update those attributes.We'll code the rest of our index route’s update() action to do this now:",
     "category": "TEST",
     "image": "https://timedotcom.files.wordpress.com/2015/10/student-test.jpg?quality=75&strip=color&w=1100"
   }]
