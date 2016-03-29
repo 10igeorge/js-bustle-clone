@@ -1,3 +1,54 @@
-<h2 id="title">Welcome to Ember</h2>
+<header class="jumbotron">
+  <h1>Bustle Clone</h1>
+</header>
 
-{{outlet}}
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Bustle</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active"><a href="#">News <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Entertainment</a></li>
+        <li><a href="#">Fashion & Beauty</a></li>
+        <li><a href="#">Lifestyle</a></li>
+        <li><a href="#">Books</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Advertise with us</a></li>
+            <li><a href="#">Apps</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">DMCA</a></li>
+            <li><a href="#">Contact</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<div class="container">
+  {{outlet}}
+  <hr>
+
+  <footer>
+    {{#link-to 'index' class="btn btn-primary"}} Home {{/link-to}}
+    {{#link-to 'admin' class="btn btn-primary"}} Admin {{/link-to}}
+  </footer>
+</div>
