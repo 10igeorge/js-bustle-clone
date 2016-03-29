@@ -1,1 +1,7 @@
-{{outlet}}
+<ul>
+  {{#each model as |article|}}
+    {{#if (filterArticles article 'fashion')}}
+      {{article-list article=article}}
+    {{/if}}
+  {{/each}}
+</ul>
